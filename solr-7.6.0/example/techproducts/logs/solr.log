@@ -1,0 +1,141 @@
+2019-02-01 21:41:40.258 INFO  (main) [   ] o.e.j.u.log Logging initialized @867ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-01 21:41:40.421 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_201-b09
+2019-02-01 21:41:40.453 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/contexts/] at interval 0
+2019-02-01 21:41:40.793 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-02-01 21:41:40.803 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-02-01 21:41:40.803 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-02-01 21:41:40.805 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-02-01 21:41:40.858 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-02-01 21:41:40.914 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-02-01 21:41:40.920 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.6.0
+2019-02-01 21:41:40.921 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-02-01 21:41:40.921 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0
+2019-02-01 21:41:40.922 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-02-01T21:41:40.922Z
+2019-02-01 21:41:40.946 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr
+2019-02-01 21:41:40.954 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/solr.xml
+2019-02-01 21:41:41.018 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@120d6fe6, but no JMX reporters were configured - adding default JMX reporter.
+2019-02-01 21:41:42.215 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-02-01 21:41:42.219 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-02-01 21:41:42.328 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@120d6fe6
+2019-02-01 21:41:42.329 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@120d6fe6
+2019-02-01 21:41:42.336 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@120d6fe6
+2019-02-01 21:41:42.372 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr
+2019-02-01 21:41:42.431 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@3c3d9b6b{/solr,file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}
+2019-02-01 21:41:42.452 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@75e91545{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-02-01 21:41:42.452 INFO  (main) [   ] o.e.j.s.Server Started @3064ms
+2019-02-01 21:41:44.408 INFO  (qtp592617454-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=91
+2019-02-01 21:41:44.455 INFO  (qtp592617454-13) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=1
+2019-02-01 21:41:44.481 INFO  (qtp592617454-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=16
+2019-02-01 21:41:44.512 INFO  (qtp592617454-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=21
+2019-02-01 21:41:44.523 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2019-02-01 21:41:44.667 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.h.a.CoreAdminOperation core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+2019-02-01 21:41:44.753 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.SolrResourceLoader [techproducts] Added 59 libs to classloader, from paths: [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/clustering/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/extraction/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/langid/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/velocity/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/dist]
+2019-02-01 21:41:45.018 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2019-02-01 21:41:45.024 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.6.0
+2019-02-01 21:41:45.191 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.IndexSchema [techproducts] Schema name=example
+2019-02-01 21:41:45.799 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2019-02-01 21:41:45.800 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2019-02-01 21:41:45.800 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-02-01 21:41:45.800 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-02-01 21:41:45.806 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2019-02-01 21:41:45.807 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-02-01 21:41:45.807 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-02-01 21:41:45.807 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2019-02-01 21:41:45.807 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2019-02-01 21:41:45.862 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts, trusted=true
+2019-02-01 21:41:45.878 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@120d6fe6
+2019-02-01 21:41:45.903 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts], dataDir=[/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/data/]
+2019-02-01 21:41:46.005 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-02-01 21:41:46.436 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-02-01 21:41:46.436 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-02-01 21:41:46.446 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-02-01 21:41:46.446 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-02-01 21:41:46.466 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@6c4cc451[techproducts] main]
+2019-02-01 21:41:46.479 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/conf
+2019-02-01 21:41:46.482 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/conf
+2019-02-01 21:41:46.483 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2019-02-01 21:41:46.484 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/conf
+2019-02-01 21:41:46.484 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2019-02-01 21:41:46.485 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2019-02-01 21:41:46.485 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/stopwords/english
+2019-02-01 21:41:46.486 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/conf
+2019-02-01 21:41:46.486 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2019-02-01 21:41:46.487 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2019-02-01 21:41:46.490 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.r.ManagedResource Notified 4 observers of /schema/analysis/synonyms/english
+2019-02-01 21:41:46.501 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-02-01 21:41:46.509 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-02-01 21:41:46.517 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2019-02-01 21:41:46.520 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-02-01 21:41:46.535 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2019-02-01 21:41:46.536 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/example/techproducts/solr/techproducts/conf/elevate.xml
+2019-02-01 21:41:46.547 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-02-01 21:41:46.548 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6c4cc451[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-02-01 21:41:46.551 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1624304314274021376
+2019-02-01 21:41:46.560 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=1893
+2019-02-01 21:41:46.610 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=60
+2019-02-01 21:41:46.611 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-02-01 21:41:46.612 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-02-01 21:41:46.612 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2019-02-01 21:41:46.630 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@6c4cc451[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-02-01 21:41:46.779 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1624304314399850496), VS1GB400C3 (1624304314505756672), VDBDB1A16 (1624304314507853824)]} 0 190
+2019-02-01 21:41:46.798 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1624304314524631040)]} 0 10
+2019-02-01 21:41:46.807 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1624304314538262528), IW-02 (1624304314540359680)]} 0 5
+2019-02-01 21:41:46.813 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1624304314546651136)]} 0 3
+2019-02-01 21:41:46.819 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1624304314552942592)]} 0 2
+2019-02-01 21:41:46.836 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1624304314560282624), 100-435805 (1624304314569719808)]} 0 13
+2019-02-01 21:41:46.843 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1624304314577059840)]} 0 3
+2019-02-01 21:41:46.851 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1624304314584399872)]} 0 4
+2019-02-01 21:41:46.864 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[adata (1624304314592788480), apple (1624304314593837056), asus (1624304314594885632), ati (1624304314595934208), belkin (1624304314595934209), canon (1624304314596982784), corsair (1624304314598031360), dell (1624304314599079936), maxtor (1624304314600128512), samsung (1624304314601177088), ... (11 adds)]} 0 9
+2019-02-01 21:41:46.870 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1624304314605371392), 6H500F0 (1624304314607468544)]} 0 3
+2019-02-01 21:41:46.877 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[USD (1624304314612711424), EUR (1624304314613760000), GBP (1624304314614808576), NOK (1624304314614808577)]} 0 3
+2019-02-01 21:41:46.887 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1624304314624245760)]} 0 5
+2019-02-01 21:41:46.906 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1624304314645217280)]} 0 15
+2019-02-01 21:41:46.914 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1624304314650460160)]} 0 4
+2019-02-01 21:41:46.918 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1624304314658848768,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-02-01 21:41:46.919 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@16b96f61 commitCommandVersion:1624304314658848768
+2019-02-01 21:41:47.081 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.s.SolrIndexSearcher Opening [Searcher@28a9f76e[techproducts] main]
+2019-02-01 21:41:47.082 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-02-01 21:41:47.083 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@28a9f76e[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.6.0):C32)))}
+2019-02-01 21:41:47.083 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-02-01 21:41:47.089 INFO  (searcherExecutor-10-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts] Registered new searcher Searcher@28a9f76e[techproducts] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.6.0):C32)))}
+2019-02-01 21:41:47.093 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 175
+2019-02-01 21:42:08.184 INFO  (qtp592617454-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1549057327764} status=0 QTime=0
+2019-02-01 21:42:08.210 INFO  (qtp592617454-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549057327765} status=0 QTime=23
+2019-02-01 21:42:08.231 INFO  (qtp592617454-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549057327765} status=0 QTime=17
+2019-02-01 21:42:11.903 INFO  (qtp592617454-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1549057327764} status=0 QTime=0
+2019-02-01 21:42:11.925 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1549057331853} status=0 QTime=7
+2019-02-01 21:42:11.934 INFO  (qtp592617454-16) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/replication params={wt=json&command=details&_=1549057331853} status=0 QTime=12
+2019-02-01 21:42:11.950 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1549057327765&ts=1549057327765} status=503 QTime=4
+2019-02-01 21:42:11.989 INFO  (qtp592617454-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549057327765} status=0 QTime=84
+2019-02-01 21:42:11.991 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/system params={wt=json&_=1549057331853} status=0 QTime=48
+2019-02-01 21:42:16.600 INFO  (qtp592617454-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1549057327764} status=0 QTime=0
+2019-02-01 21:42:16.645 INFO  (qtp592617454-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549057327765} status=0 QTime=40
+2019-02-01 21:42:20.211 INFO  (qtp592617454-16) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=*:*&_=1549057336521} hits=32 status=0 QTime=8
+2019-02-01 21:42:34.367 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=Unbuffered&_=1549057336521} hits=3 status=0 QTime=7
+2019-02-01 21:42:49.921 INFO  (qtp592617454-16) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=memory&_=1549057336521} hits=5 status=0 QTime=2
+2019-02-01 21:43:03.214 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=74&_=1549057336521} hits=0 status=0 QTime=0
+2019-02-01 21:43:09.695 INFO  (qtp592617454-16) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=gb&_=1549057336521} hits=3 status=0 QTime=4
+2019-02-01 21:43:19.510 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=cache&_=1549057336521} hits=2 status=0 QTime=2
+2019-02-01 21:43:20.689 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=cache&_=1549057336521} hits=2 status=0 QTime=0
+2019-02-01 21:43:50.786 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=video&fl=name+score} hits=3 status=0 QTime=2
+2019-02-01 21:44:02.703 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=bg&fl=name+score} hits=0 status=0 QTime=0
+2019-02-01 21:44:05.736 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=b&fl=name+score} hits=0 status=0 QTime=1
+2019-02-01 21:44:09.593 INFO  (qtp592617454-19) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=gb&fl=name+score} hits=3 status=0 QTime=1
+2019-02-01 21:44:18.292 INFO  (qtp592617454-14) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=sata&fl=name+score} hits=1 status=0 QTime=1
+2019-02-01 21:44:23.560 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=sata~1&fl=name+score} hits=3 status=0 QTime=49
+2019-02-01 21:44:56.212 INFO  (qtp592617454-21) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=video&defType=dismax} hits=3 status=0 QTime=15
+2019-02-01 21:45:18.574 INFO  (qtp592617454-13) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=video} hits=3 status=0 QTime=0
+2019-02-01 21:46:01.327 INFO  (qtp592617454-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=video&defType=dismax&fl=*,score} hits=3 status=0 QTime=2
+2019-02-01 21:52:39.668 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@75e91545{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-02-01 21:52:39.669 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-02-01 21:52:39.672 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1834361038
+2019-02-01 21:52:39.674 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-02-01 21:52:39.675 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7966baa7: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@440df042
+2019-02-01 21:52:39.686 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-02-01 21:52:39.687 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@555cf22: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4df767f4
+2019-02-01 21:52:39.689 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-02-01 21:52:39.689 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6bb2d00b: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@4d3006cc
+2019-02-01 21:52:39.699 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@19ac59d4
+2019-02-01 21:52:39.699 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts, tag=19ac59d4
+2019-02-01 21:52:39.699 INFO  (coreCloseExecutor-15-thread-1) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@25855cf6: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts / com.codahale.metrics.MetricRegistry@5d619820
+2019-02-01 21:52:39.779 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@3c3d9b6b{/solr,null,UNAVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}

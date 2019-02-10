@@ -1,87 +1,75 @@
-2019-02-04 16:30:47.338 INFO  (main) [   ] o.e.j.u.log Logging initialized @1054ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-02-04 16:30:47.517 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_201-b09
-2019-02-04 16:30:47.551 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/contexts/] at interval 0
-2019-02-04 16:30:47.895 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-02-04 16:30:47.903 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-02-04 16:30:47.904 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-02-04 16:30:47.905 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-02-04 16:30:47.949 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
-2019-02-04 16:30:48.003 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-02-04 16:30:48.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.6.0
-2019-02-04 16:30:48.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-02-04 16:30:48.009 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0
-2019-02-04 16:30:48.009 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-02-04T16:30:48.009Z
-2019-02-04 16:30:48.038 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr
-2019-02-04 16:30:48.044 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/solr.xml
-2019-02-04 16:30:48.104 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1, but no JMX reporters were configured - adding default JMX reporter.
-2019-02-04 16:30:49.050 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-02-04 16:30:49.054 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-02-04 16:30:49.180 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
-2019-02-04 16:30:49.180 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
-2019-02-04 16:30:49.190 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
-2019-02-04 16:30:49.236 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr
-2019-02-04 16:30:49.237 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [my_core]
-2019-02-04 16:30:49.307 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrResourceLoader [my_core] Added 58 libs to classloader, from paths: [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/clustering/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/extraction/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/langid/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/velocity/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/dist]
-2019-02-04 16:30:49.350 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@394df057{/solr,file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}
-2019-02-04 16:30:49.378 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5974109{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-02-04 16:30:49.379 INFO  (main) [   ] o.e.j.s.Server Started @3098ms
-2019-02-04 16:30:49.571 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.6.0
-2019-02-04 16:30:49.776 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.IndexSchema [my_core] Schema name=default-config
-2019-02-04 16:30:50.500 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-02-04 16:30:50.568 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.CoreContainer Creating SolrCore 'my_core' using configuration from instancedir /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core, trusted=true
-2019-02-04 16:30:50.618 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.my_core' (registry 'solr.core.my_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
-2019-02-04 16:30:50.641 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrCore [[my_core] ] Opening new SolrCore at [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core], dataDir=[/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core/data/]
-2019-02-04 16:30:50.706 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-02-04 16:30:51.362 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-02-04 16:30:51.363 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-02-04 16:30:51.397 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-02-04 16:30:51.398 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-02-04 16:30:51.664 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@7bfae500[my_core] main]
-2019-02-04 16:30:51.681 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core/conf
-2019-02-04 16:30:51.706 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-02-04 16:30:51.713 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-02-04 16:30:51.728 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-02-04 16:30:51.729 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7bfae500[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.6.0):C3051)))}
-2019-02-04 16:30:51.729 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-02-04 16:30:51.729 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-02-04 16:30:51.740 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@7bfae500[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_2(7.6.0):C3051)))}
-2019-02-04 16:30:52.950 INFO  (qtp952486988-18) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=Run&fl=title&debugQuery=on&_=1549297830136} hits=6 status=0 QTime=85
-2019-02-04 16:30:53.595 INFO  (qtp952486988-14) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=Run&fl=title&debugQuery=on&_=1549297830136} hits=6 status=0 QTime=6
-2019-02-04 16:30:55.680 INFO  (qtp952486988-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1549297855426} status=0 QTime=1
-2019-02-04 16:30:55.717 INFO  (qtp952486988-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549297855428} status=0 QTime=34
-2019-02-04 16:31:02.266 INFO  (qtp952486988-20) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=Run&fl=title&_=1549297855623} hits=6 status=0 QTime=1
-2019-02-04 16:32:21.834 INFO  (qtp952486988-19) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=Run&fl=title&_=1549297855623} hits=6 status=0 QTime=1
-2019-02-04 16:33:07.341 INFO  (qtp952486988-17) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@ac56671[my_core] realtime]
-2019-02-04 16:33:07.343 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1624556686376173568,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-02-04 16:33:07.344 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4d7841a9 commitCommandVersion:1624556686376173568
-2019-02-04 16:33:07.351 INFO  (qtp952486988-17) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@211d70d[my_core] main]
-2019-02-04 16:33:07.357 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-02-04 16:33:07.358 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@211d70d[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-02-04 16:33:07.358 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-02-04 16:33:07.369 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@211d70d[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-02-04 16:33:07.385 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.p.LogUpdateProcessorFactory [my_core]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1624556686330036224),commit=} 0 176
-2019-02-04 16:33:27.486 INFO  (qtp952486988-22) [   x:my_core] o.a.s.u.p.LogUpdateProcessorFactory [my_core]  webapp=/solr path=/update params={}{add=[93837 (1624556703224692736), 8193 (1624556703282364416), 8195 (1624556703292850176), 5 (1624556703305433088), 8202 (1624556703322210304), 11 (1624556703336890368), 12 (1624556703384076288), 13 (1624556703391416320), 14 (1624556703402950656), 15 (1624556703411339264), ... (3051 adds)]} 0 4125
-2019-02-04 16:33:27.533 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1624556707546923008,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-02-04 16:33:27.533 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@4d7841a9 commitCommandVersion:1624556707546923008
-2019-02-04 16:33:29.679 INFO  (qtp952486988-17) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@19c7b928[my_core] main]
-2019-02-04 16:33:29.680 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@19c7b928[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.6.0):C3051)))}
-2019-02-04 16:33:29.681 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-02-04 16:33:29.684 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-02-04 16:33:29.689 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@19c7b928[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.6.0):C3051)))}
-2019-02-04 16:33:29.691 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1624556709809750016,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-02-04 16:33:29.691 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
-2019-02-04 16:33:29.693 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-02-04 16:33:29.694 INFO  (qtp952486988-17) [   x:my_core] o.a.s.u.p.LogUpdateProcessorFactory [my_core]  webapp=/solr path=/update params={commit=true}{commit=,commit=} 0 2161
-2019-02-04 16:33:36.163 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5974109{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
-2019-02-04 16:33:36.163 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2019-02-04 16:33:36.166 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1150058854
-2019-02-04 16:33:36.168 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
-2019-02-04 16:33:36.170 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@302a07d: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@7da26cdc
-2019-02-04 16:33:36.176 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
-2019-02-04 16:33:36.176 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3bd418e4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@4588f21a
-2019-02-04 16:33:36.178 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
-2019-02-04 16:33:36.179 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@544820b7: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@40e97ead
-2019-02-04 16:33:36.182 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.c.SolrCore [my_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@6c4b28dd
-2019-02-04 16:33:36.182 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.my_core, tag=6c4b28dd
-2019-02-04 16:33:36.183 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35101f98: rootName = null, domain = solr.core.my_core, service url = null, agent id = null] for registry solr.core.my_core / com.codahale.metrics.MetricRegistry@95ffa62
-2019-02-04 16:33:36.252 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@394df057{/solr,null,UNAVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}
+2019-02-04 16:33:42.338 INFO  (main) [   ] o.e.j.u.log Logging initialized @1004ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-02-04 16:33:42.500 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.11.v20180605; built: 2018-06-05T18:24:03.829Z; git: d5fc0523cfa96bfebfbda19606cad384d772f04c; jvm 1.8.0_201-b09
+2019-02-04 16:33:42.530 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/contexts/] at interval 0
+2019-02-04 16:33:42.897 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-02-04 16:33:42.905 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-02-04 16:33:42.905 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-02-04 16:33:42.907 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-02-04 16:33:42.965 INFO  (main) [   ] o.a.s.u.c.SSLCredentialProviderFactory Processing SSL Credential Provider chain: env;sysprop
+2019-02-04 16:33:43.014 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-02-04 16:33:43.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.6.0
+2019-02-04 16:33:43.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-02-04 16:33:43.022 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0
+2019-02-04 16:33:43.023 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-02-04T16:33:43.023Z
+2019-02-04 16:33:43.052 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr
+2019-02-04 16:33:43.059 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/solr.xml
+2019-02-04 16:33:43.116 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1, but no JMX reporters were configured - adding default JMX reporter.
+2019-02-04 16:33:44.216 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-02-04 16:33:44.221 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-02-04 16:33:44.387 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
+2019-02-04 16:33:44.389 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
+2019-02-04 16:33:44.400 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
+2019-02-04 16:33:44.558 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr
+2019-02-04 16:33:44.562 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [my_core]
+2019-02-04 16:33:44.741 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrResourceLoader [my_core] Added 58 libs to classloader, from paths: [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/clustering/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/extraction/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/langid/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/contrib/velocity/lib, /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/dist]
+2019-02-04 16:33:44.923 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@394df057{/solr,file:///Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}
+2019-02-04 16:33:44.962 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2bcca537{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-02-04 16:33:44.963 INFO  (main) [   ] o.e.j.s.Server Started @3630ms
+2019-02-04 16:33:45.142 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.6.0
+2019-02-04 16:33:45.418 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.IndexSchema [my_core] Schema name=default-config
+2019-02-04 16:33:46.546 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-02-04 16:33:46.612 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.CoreContainer Creating SolrCore 'my_core' using configuration from instancedir /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core, trusted=true
+2019-02-04 16:33:46.652 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.my_core' (registry 'solr.core.my_core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@442675e1
+2019-02-04 16:33:46.679 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.c.SolrCore [[my_core] ] Opening new SolrCore at [/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core], dataDir=[/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core/data/]
+2019-02-04 16:33:46.735 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-02-04 16:33:47.351 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-02-04 16:33:47.352 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-02-04 16:33:47.383 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-02-04 16:33:47.383 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-02-04 16:33:47.613 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@22d5f0d2[my_core] main]
+2019-02-04 16:33:47.639 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr/my_core/conf
+2019-02-04 16:33:47.692 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-02-04 16:33:47.702 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-02-04 16:33:47.910 INFO  (coreLoadExecutor-9-thread-1) [   x:my_core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-02-04 16:33:47.911 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@22d5f0d2[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.6.0):C3051)))}
+2019-02-04 16:33:47.911 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-02-04 16:33:47.911 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-02-04 16:33:47.924 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@22d5f0d2[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_3(7.6.0):C3051)))}
+2019-02-04 16:33:48.479 INFO  (qtp952486988-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1549298028217} status=0 QTime=6
+2019-02-04 16:33:48.520 INFO  (qtp952486988-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1549298028219} status=0 QTime=43
+2019-02-04 16:33:58.358 INFO  (qtp952486988-20) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=basketball+with+aliens&fl=title&debugQuery=on&_=1549298028420} hits=20 status=0 QTime=134
+2019-02-04 16:34:07.827 INFO  (qtp952486988-21) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=run&fl=title&debugQuery=on&_=1549298028420} hits=6 status=0 QTime=14
+2019-02-04 16:34:12.943 INFO  (qtp952486988-20) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=run+mazer&fl=title&debugQuery=on&_=1549298028420} hits=8 status=0 QTime=16
+2019-02-04 16:34:20.328 INFO  (qtp952486988-21) [   x:my_core] o.a.s.c.S.Request [my_core]  webapp=/solr path=/select params={q=Run&fl=title&debugQuery=on&_=1549298028420} hits=6 status=0 QTime=6
+2019-02-04 16:35:22.371 INFO  (qtp952486988-18) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@72df0637[my_core] realtime]
+2019-02-04 16:35:22.374 INFO  (qtp952486988-18) [   x:my_core] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1624556827966439424,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-02-04 16:35:22.374 INFO  (qtp952486988-18) [   x:my_core] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@53c06dda commitCommandVersion:1624556827966439424
+2019-02-04 16:35:22.387 INFO  (qtp952486988-18) [   x:my_core] o.a.s.s.SolrIndexSearcher Opening [Searcher@fe868da[my_core] main]
+2019-02-04 16:35:22.396 INFO  (qtp952486988-18) [   x:my_core] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-02-04 16:35:22.396 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@fe868da[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-02-04 16:35:22.396 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-02-04 16:35:22.406 INFO  (searcherExecutor-10-thread-1-processing-x:my_core) [   x:my_core] o.a.s.c.SolrCore [my_core] Registered new searcher Searcher@fe868da[my_core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-02-04 16:35:22.417 INFO  (qtp952486988-18) [   x:my_core] o.a.s.u.p.LogUpdateProcessorFactory [my_core]  webapp=/solr path=/update params={commit=true}{deleteByQuery=*:* (-1624556827920302080),commit=} 0 160
+2019-02-04 16:35:26.365 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@2bcca537{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2019-02-04 16:35:26.365 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2019-02-04 16:35:26.368 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1150058854
+2019-02-04 16:35:26.369 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2019-02-04 16:35:26.371 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@302a07d: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@22e79223
+2019-02-04 16:35:26.379 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2019-02-04 16:35:26.380 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3bd418e4: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5ee3f14d
+2019-02-04 16:35:26.382 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2019-02-04 16:35:26.383 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@544820b7: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@408b1638
+2019-02-04 16:35:26.392 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.c.SolrCore [my_core]  CLOSING SolrCore org.apache.solr.core.SolrCore@202987b9
+2019-02-04 16:35:26.392 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.my_core, tag=202987b9
+2019-02-04 16:35:26.392 INFO  (coreCloseExecutor-15-thread-1) [   x:my_core] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1d1dc705: rootName = null, domain = solr.core.my_core, service url = null, agent id = null] for registry solr.core.my_core / com.codahale.metrics.MetricRegistry@4eedd0f
+2019-02-04 16:35:26.432 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@394df057{/solr,null,UNAVAILABLE}{/Users/kcurtis/Desktop/nlp_ir/solr-7.6.0/server/solr-webapp/webapp}

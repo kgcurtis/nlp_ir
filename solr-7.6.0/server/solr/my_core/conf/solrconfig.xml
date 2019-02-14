@@ -933,11 +933,22 @@
 
   <searchComponent name="suggest" class="solr.SuggestComponent">
     <lst name="suggester">
-      <str name="name">mySuggester</str>
+      <str name="name">aiSuggester</str>
+      <str name="lookupImpl">AnalyzingInfixLookupFactory</str>
+      <str name="dictionaryImpl">DocumentDictionaryFactory</str>
+      <str name="field">title</str>
+      <str name="weightField">vote_count</str>
+      <str name="payloadField">id</str>
+      <str name="buildOnStartup">true</str>
+      <str name="suggestAnalyzerFieldType">text_general</str>
+    </lst>
+    <lst name="suggester">
+      <str name="name">fuzzySuggester</str>
       <str name="lookupImpl">FuzzyLookupFactory</str>
       <str name="dictionaryImpl">DocumentDictionaryFactory</str>
       <str name="field">title</str>
       <str name="weightField">vote_count</str>
+      <str name="payloadField">id</str>
       <str name="buildOnStartup">true</str>
       <str name="suggestAnalyzerFieldType">text_general</str>
     </lst>
@@ -947,6 +958,8 @@
     <lst name="defaults">
       <str name="suggest">true</str>
       <str name="suggest.count">10</str>
+      <str name="suggest.dictionary">aiSuggester</str>
+      <str name="suggest.dictionary">fuzzySuggester</str>
     </lst>
     <arr name="components">
       <str>suggest</str>

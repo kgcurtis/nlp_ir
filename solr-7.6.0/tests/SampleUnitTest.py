@@ -1,5 +1,6 @@
 import pysolr
 
+# solr = pysolr.Solr("http://ec2-3-80-214-110.compute-1.amazonaws.com:8983/solr/my_core", timeout=10)
 solr = pysolr.Solr("http://localhost:8983/solr/my_core", timeout=10)
 count = 0
 
@@ -13,10 +14,8 @@ with open("turk_data/goldStandardNoSeries.txt") as fi:
 		user_query = query_list[0]
 		turk_result = query_list[2][1:].replace("\n", "")
 		solr_results = solr.search(user_query)
-		#print("Turk: " + str(turk_result.lower()) + " \n")
 		for res in solr_results:
-			#print("Solr: " + str(res['title'][0].lower()))
-			if turk_result.lower() == res['title'][0].lower():
+			if turk_result.lower().strip() == res['title'][0].lower().strip():
 				count += 1
 				break
 
